@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelter For Souls</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="projekt.css">
+</head>
+<body>
+    <header class="header-area">
+    <h1>SHELTER FOR SOULS</h1>
+    <ul class="navigace">
+        <li> <a href="index.html">Domů</a> </li>
+        <li> <a href="adopce.html">Adopce</a></li>
+        <li> <a href="jakpomoci.html">Jak Pomoci</a></li>
+        <li> <a href="aktuality.html">Aktuality</a></li>
+        <li> <a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</header>
+<div>
+    <h1 class="nadpis2">Váš nový mazlíček</h1>
+</div>
+<div>
+    <p id="adopceForm">Pokud máte zájem o adopci některého z našich zvířátek, připravili jsme pro vás jednoduchý formulář. 
+        Adopci bude možno uskutečnit po schůzce a po ujištění, že zvířátko najde ten nejlepší domov.
+    Nejprve vás požádáme o vaše kontaktní údaje, jako je jméno, příjmení a e-mail. O všem ostatním Vás budeme kontaktovat pomocí e-mailu.
+    Následující konverzace s Vámi buď prostřednictvím emailu, nebo osobního setkání bude probíhat například takto: 
+    Sdělte nám prosím, zda máte zkušenosti s péčí o zvířata, jaké mazlíčky jste v minulosti chovali a kolik času můžete 
+    denně věnovat péči o nového člena rodiny. Dále nás zajímá, jestli bydlíte v bytě nebo domě a zda máte k dispozici zahradu. 
+    Zvířata potřebují dostatek prostoru a podnětů, proto nám tyto informace pomohou vybrat ideálního kandidáta. Před adopcí také 
+    provádíme kontrolu prostředí, abychom se ujistili, že vše odpovídá potřebám zvířete. Vaše odpovědi nám pomohou najít to nejlepší 
+    spojení mezi vámi a naším svěřencem. Jakmile formulář odešlete, budeme vás v následujících dnech kontaktovat s dalším postupem.
+    Děkujeme vám, že zvažujete možnost adopce a pomáháte nám měnit životy zvířátek k lepšímu. Každý nový domov znamená naději na šťastný 
+    a láskyplný život, který si každé zvířátko zaslouží.
+    </p>
+</div>
+<form id="formular">
+    <h2>Osobní údaje</h2>
+    <div>
+        <label for="jmeno">Jméno:</label>
+        <input type="text" name="jmeno" required="required" id="jmeno">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" required="required" id="email">
+    </div>
+
+    <fieldset>
+        <legend>O které z našich zvířátek máte zájem?</legend>
+
+        <div>
+            <input type="radio" name="vyberMazlicka" id="Punťa" value="Punťa">
+            <label for="Punťa">Punťa</label>
+        </div>
+        <div>
+            <input type="radio" name="vyberMazlicka" id="Kulíšek" value="Kulíšek">
+            <label for="Kulíšek">Kulíšek</label>
+        </div>
+        <div>
+            <input type="radio" name="vyberMazlicka" id="Micka" value="Micka">
+            <label for="Micka">Micka</label>
+        </div>
+        
+    </fieldset>
+    <div>
+        <label for="textovepole">Jestli máte nějaké otázky, či poždavky, neváhejte nám je sem napsat:</label><br>
+            <textarea name="textovepole" id="textovepole" placeholder="Pište prosím sem..."></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Odeslat"> 
+    </div>
+</form>
+
+<footer class="footer-area">
+<h3>Studentský zápočtový projekt TNPW1</h3>
+<p>&copy; Doubravová Natálie, doubrna1@uhk.cz</p>
+<p>Datum poslední aktualizace: 2.12.2024</p>
+</footer>
+
+</body>
+</html>

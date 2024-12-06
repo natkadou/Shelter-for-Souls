@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #D9D9D9;
+    margin: 0;
+}
+header {
+    text-align: center;
+}
+
+.header-area{
+    background-color: #688978;
+    border: 5px solid #688978;
+    padding: 5px;
+    text-align: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.navigace a{
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+.navigace a:hover{
+    color:#D9D9D9;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    background-color: #B3E7F3;
+    padding: 5px;
+}
+.main-area{
+    background-image: url(rodinaskralikem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: #688978;
+}
+.nadpis{
+    text-align: center;
+    text-decoration: underline;
+    background-color: #688978;
+    padding: 20px;
+    margin: 0;
+}
+.nadpis2{
+    text-align: center;
+    text-decoration: underline;
+    background-color:#B3E7F3;
+    padding: 20px;
+    margin: 0;
+}
+.mensiFoto{
+    min-width: 100%;
+    max-width: 100%;
+   
+}
+table{
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.zvire{
+    /*border: 5px solid black;*/
+    display: table;
+    clear: both;
+    background-color: #D9D9D9;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.tabulka{
+    width: 33%;
+    float: left;
+    min-width: 380px;
+    text-align: center;
+    flex: 1;
+    align-items: center;
+}
+.tabulka2{
+    width: 50%;
+    float: left;
+    min-width: 380px;
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+.odstavce{
+    padding: 15px;
+    background-color: #D9D9D9;
+}
+.oNas{
+    display: inline-block;
+    align-items: center; 
+    column-gap: 5px;
+    background-color: #D9D9D9;
+}
+
+.oNasFotka {
+    width: 50%;
+    float: left;
+    flex-wrap: wrap;
+    min-width: 380px;
+    height:auto;
+    padding: 50px 20px;
+   
+}
+
+.oNasText {
+  font-size: 20px;
+  padding: 50px 20px;
+  width: 50%;
+  float: left;
+  flex-wrap: wrap;
+  min-width: 380px;
+}
+#formular{
+    margin: 50px;
+    background-color: #B3E7F3;
+    border: 15px solid #B3E7F3;
+}
+#adopceForm{
+    margin: 50px;
+}
+.odstavce{
+    text-align: center;
+}
+.web{
+    text-decoration: underline; 
+    color: #203354;
+}
+.web:visited{
+    color:#688978;
+}
+.web:hover{
+    color:#688978;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 20px;
+    width: 100%;
+}
+.pokus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width:390px){ /*telefon */
+    .header, .navigace{
+        display:inline-block;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+     .mensiFoto{
+        width: 100%;
+     }
+     .tabulka, .column{
+        width: 100%;
+        float: left;
+     }
+     .zvire{
+        width: 100%;
+        align-items: center;
+     }
+     .odstavce{
+        width: 100%;
+        float: left;
+     }
+     .oNas, .oNasFotka, .oNasText{
+        display: inline-block;
+        width: 100%;
+     }
+     .tabulka2{
+        width: 100%;
+        float: left;
+        align-items: center;
+     }
+    }
+
+@media screen and (min-width:769px){ /*tablet*/
+    .header, .navigace{
+        display: inline-block;
+        
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .mensiFoto{
+        width: 100%;
+    }
+    .tabulka{
+        width: 100%;
+        display: flex;
+        float: left;
+    }
+    .zvire{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .odstavce{
+        width: 50%;
+        float: left;
+    }
+    .oNas, .oNasFotka, .oNasText{
+        width: 100%;
+        display: flex;
+    }
+    .tabulka2{
+        width: 50%;
+        float: left;
+        min-width: 380px;
+        text-align: center;
+        flex: 1;
+        align-items: center;
+        background-color: #D9D9D9;
+    }
+    .column {
+        padding: 20px;
+        width: 33%;
+    }
+    
+}
+@media screen and (min-width:1025px){ /*pc*/
+    .header{
+        flex-direction: row;
+    }
+    .navigace {
+        
+    display: inline-flex;
+    }
+    .odstavce{
+        width: 25%;
+        float: left;
+        flex: 1;
+    }
+    .tabulka2{
+        width: 50%;
+        float: left;
+        min-width: 380px;
+        text-align: center;
+        flex: 1;
+        align-items: center;
+        background-color: #D9D9D9;
+    }
+    .column {
+        padding: 20px;
+        width: 33%;
+    }
+}
+
+
+
